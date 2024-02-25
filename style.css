@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color: rgb(68, 60, 60);
+    cursor: default;
+}
+
+span{
+    color: orange ;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: rgb(68, 60, 60);
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover{
+    color: orange
+    ;
+}
+
+.tombol-download{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: orange;
+    border-radius: 10px;
+    border: 2px solid orange;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.tombol-dowload:hover{
+    color: orange;
+    background: transparent;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("Contour Line.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.content{
+    max-width: 700px;
+    color: rgb(68, 60, 60);
+}
+
+.content h2{
+    font-size: 3em;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: orange;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-radius: 10%;
+}
+  
+.container:hover .overlay {
+    width: 100%;
+}
+  
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.grup-tombol a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: orange;
+    border-radius: 30px;
+    border: 2px solid orange;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.grup-tombol a:hover:nth-child(1) {
+    color: orange;
+    background: transparent;
+}
+
+.grup-tombol a:nth-child(2) {
+    color: orange;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.grup-tombol a:hover:nth-child(2) {
+    color: aliceblue;
+    background: orange;
+}
+
+.sosmed {
+    position: absolute;
+    bottom: 50px;
+}
+
+.sosmed a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 40px;
+    outline: 3px solid orange;
+    transition: .3s;
+}
+
+.sosmed a:hover {
+    transform: translateY(-5px);
+}
+
+.sosmed a i {
+    color: rgb(68, 60, 60);
+    font-size: 20px;
+}
