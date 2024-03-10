@@ -92,7 +92,7 @@ span{
     border-radius: 10%;
 }
   
-.overlay {
+.overlay1 {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -101,12 +101,13 @@ span{
     height: 100%;
     width: 50%;
     opacity: 0;
-    border-radius: 30px;
+    border-radius: 50px;
     transition: .5s ease;
     background-color: orange;
+    cursor: pointer;
 }
   
-  .container:hover .overlay {
+  .container:hover .overlay1 {
     opacity: 1;
 }
   
